@@ -1,17 +1,19 @@
 @charset "utf-8";
-
-body, input, textarea, select, button, table {
-    font-family:'Malgun Gothic','맑은고딕', sans-serif;
-    font-size: 100%}
-body, div, dl, dt, dd, ul, ol, menu, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, th, td, p {
-    margin: 0;
-    padding: 0;
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body, input, textarea, select, button, table, h1,h2,h3,h4,th,td {
+    font-family:Avenir,'Lato','Malgun Gothic','맑은고딕', sans-serif;
+    font-size: 1em;
+    -webkit-text-size-adjust:none;
+}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,a,button,select{
+    margin:0;
+    padding:0;
+    font-weight:normal
 }
 article, aside, hgroup, header, footer, figure, figcaption, nav, section, time, mark, canvas, video, audio, details, summary {
     display: block;
 }
-
-body {background-color:#fafafa;color:#000;font-size:2em;}
+body {background-color:#fff;}
 
 dl, dt, dd, ul, ol, menu, li {
     list-style: none;
@@ -39,9 +41,11 @@ q:before, q:after {
 form {
     margin: 0;
 }
-a {
+a, a:active, a:visited {
+    color:#666;
     text-decoration: none;
 }
+a:hover {color:#666;text-decoration:none;}
 .clearFix:after {
     content: ".";
     display: block;
